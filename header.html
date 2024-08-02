@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Header</title>
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="logo">
+            <img src="https://framerusercontent.com/images/lXftehfATrcLhr12tlKeK6R3ty4.svg" alt="Logo">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="btn">
+            <button class="app">Download App</button>
+        </div>
+    </div>
+    <!-- Add scroll effect -->
+     <script>
+        window.addEventListener('scroll', ()=>{
+            const header = document.getElementById('header');
+            if(window.scrollY>100){
+                header.classList.add('shrink');
+            }else{
+                header.classList.remove('shrink');
+            }
+        });
+     </script>
+</body>
+</html>
